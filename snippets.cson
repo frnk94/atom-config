@@ -1,0 +1,26 @@
+# Your snippets
+'.source.jsx':
+	'React create class':
+		'prefix': 'rcc'
+		'body': "const React = require('react');\n\nconst ${1} = React.createClass({\n\n\trender() {\n\t\treturn (\n\t\t\t${0:<div />}\n\t\t);\n\t},\n\n});\n\nmodule.exports = ${1};"
+	'componentWillMount':
+		'prefix':'cwm',
+		'body': 'componentWillMount() {\n\t${1}\n},'
+	'componentDidMount':
+		'prefix':'cdm',
+		'body': 'componentDidMount() {\n\t${1}\n},'
+	'componentWillUnmount':
+		'prefix':'cwun',
+		'body': 'componentWillUnmount() {\n\t${1}\n},'
+	'GetInitialState':
+		'prefix':'gis',
+		'body': 'getInitialState() {\n\treturn {\n\t\t${1}: ${2}\n\t};\n},'
+	'setState':
+		'prefix':'sst',
+		'body': 'this.setState({\n\t${1}: ${2}\n});'
+	'state':
+		'prefix':'state',
+		'body': 'this.state.${1}'
+	'props':
+		'prefix':'props',
+		'body': 'this.props.${1}'
